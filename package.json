@@ -1,7 +1,7 @@
 {
   "name": "workflow-automation-system",
-  "version": "1.0.0",
-  "description": "Web-based workflow automation system with drag-and-drop interface",
+  "version": "1.0.1",
+  "description": "AutoFlow - Web-based workflow automation system with drag-and-drop interface",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
