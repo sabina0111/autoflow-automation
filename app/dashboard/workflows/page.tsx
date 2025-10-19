@@ -173,7 +173,7 @@ export default function WorkflowsPage() {
                     </div>
                     <div className="text-center">
                       <div className="text-lg font-semibold text-white">
-                        {workflow.status || 'Active'}
+                        {(workflow as any).status || 'Active'}
                       </div>
                       <div className="text-xs text-gray-500">Status</div>
                     </div>
