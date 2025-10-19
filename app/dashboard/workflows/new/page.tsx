@@ -8,7 +8,7 @@ import { useAuth } from '@/contexts/AuthContext';
 import { WorkflowField } from '@/types';
 import { Plus, Trash2, GripVertical } from 'lucide-react';
 import toast from 'react-hot-toast';
-import DashboardLayout from '@/components/layout/DashboardLayout';
+import { DashboardLayout } from '@/components/layout/DashboardLayout';
 import {
   DndContext,
   closestCenter,

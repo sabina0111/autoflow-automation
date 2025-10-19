@@ -46,12 +46,12 @@ export default function Dashboard() {
       
       // Sort and limit in JavaScript
       workflowsData.sort((a, b) => {
-        const aDate = a.createdAt && typeof a.createdAt.toDate === 'function' 
-          ? a.createdAt.toDate() 
-          : new Date(0);
-        const bDate = b.createdAt && typeof b.createdAt.toDate === 'function'
-          ? b.createdAt.toDate()
-          : new Date(0);
+        const aDate = a.createdAt && typeof (a.createdAt as any).toDate === 'function' 
+          ? (a.createdAt as any).toDate() 
+          : new Date(a.createdAt || 0);
+        const bDate = b.createdAt && typeof (b.createdAt as any).toDate === 'function'
+          ? (b.createdAt as any).toDate()
+          : new Date(b.createdAt || 0);
         return bDate.getTime() - aDate.getTime();
       });
       workflowsData = workflowsData.slice(0, 5);
